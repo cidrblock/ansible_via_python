@@ -1,0 +1,7 @@
+- name: Try a missing role
+  hosts: localhost
+  gather_facts: true
+  tasks:
+    - name: Use a missing role
+      ansible.builtin.include_role:
+        name: test

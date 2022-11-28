@@ -1,0 +1,5 @@
+- hosts:  localhost
+  gather_facts: True
+  tasks:
+  - name: Print out the gather_facts
+    debug: var=ansible_facts

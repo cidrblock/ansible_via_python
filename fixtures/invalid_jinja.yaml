@@ -1,0 +1,7 @@
+- name: Try a missing role
+  hosts: localhost
+  gather_facts: True
+  tasks:
+    - name: Use a missing role
+      ansible.builtin.debug:
+        msg: "{{ }"

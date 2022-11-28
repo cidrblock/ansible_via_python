@@ -1,0 +1,6 @@
+- hosts: localhost
+  gather_facts: True
+  tasks:
+    - name: Run a missing plugin
+      collection.missing.plugin:
+        name: "foo"
